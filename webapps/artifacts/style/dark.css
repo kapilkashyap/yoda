@@ -1,0 +1,69 @@
+html, body {
+    user-select: none;
+    background-color: #e2e2e2;
+    font-family: verdana;
+    font-size: 11px;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+html .dark, body .dark {
+    color: #fffb;
+    background: radial-gradient(circle at 50% 33%, #999, #222);
+}
+
+.homePageCntrStyle {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.homePageTextStyle {
+    display: flex;
+    opacity: 1;
+    font-size: xxx-large;
+    animation-name: mayTheForceBeWithYouText;
+    animation-duration: 1s;
+}
+
+.homePageEmojiStyle {
+    display: flex;
+    font-size: 180px;
+    animation-name: mayTheForceBeWithYouEmoji;
+    animation-duration: 1s;
+}
+
+.errorMsgCntrStyle {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
+}
+.errorMsgTextStyle {
+    display: flex;
+    opacity: 1;
+    font-size: xxx-large;
+    animation-name: mayTheForceBeWithYouText;
+    animation-duration: 1s;
+}
+
+@keyframes mayTheForceBeWithYouText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes mayTheForceBeWithYouEmoji {
+    0% {
+        font-size: 0px;
+    }
+    50% {
+        font-size: 180px;
+    }
+}
