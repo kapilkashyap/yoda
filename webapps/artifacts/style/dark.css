@@ -9,48 +9,138 @@ html, body {
     flex-direction: column;
 }
 
-html .dark, body .dark {
+html .dark-theme, body .dark-theme {
     color: #fffb;
-    background: radial-gradient(circle at 50% 33%, #999, #222);
+    /* background: radial-gradient(circle at 50% 33%, #999, #222); */
+    /* background: radial-gradient(circle, #0581fd 0%, #1c1e20 100%); */
+    background: radial-gradient(circle, #555a5f 0%, #1c1e20 100%);
 }
 
-.homePageCntrStyle {
+.top-tier {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 50px;
     align-items: center;
+    flex-grow: 1;
 }
 
-.homePageTextStyle {
+.top-tier .punch-line {
     display: flex;
     opacity: 1;
     font-size: xxx-large;
-    animation-name: mayTheForceBeWithYouText;
+    animation-name: punch-line-animation;
     animation-duration: 1s;
 }
 
-.homePageEmojiStyle {
+.top-tier .logo {
     display: flex;
     font-size: 180px;
-    animation-name: mayTheForceBeWithYouEmoji;
+    animation-name: logo-animation;
     animation-duration: 1s;
 }
 
-.errorMsgCntrStyle {
+.middle-tier {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 2;
+}
+
+.middle-tier .sections {
+    display: flex;
+}
+
+.middle-tier .section {
+    width: 200px;
+}
+
+.middle-tier .section .header {
+    color: #ffb;
+    text-align: center;
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+.middle-tier .examples-section .list {
+    display: flex;
+    margin-top: 10px;
     flex-direction: column;
-    margin-top: 100px;
     align-items: center;
 }
-.errorMsgTextStyle {
+
+.middle-tier .examples-section .list .entry {
+    margin: 5px 0 0;
     display: flex;
-    opacity: 1;
-    font-size: xxx-large;
-    animation-name: mayTheForceBeWithYouText;
-    animation-duration: 1s;
 }
 
-@keyframes mayTheForceBeWithYouText {
+.middle-tier .examples-section .list .entry > a {
+    color: #fffb;
+    font-size: large;
+    text-decoration: none;
+}
+
+.middle-tier .examples-section .list .entry > a:hover {
+    text-decoration: underline;
+}
+
+.bottom-tier {
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-grow: 9;
+}
+
+.bottom-tier .info {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+
+.bottom-tier .info div {
+    display: flex;
+    margin: 2px 5px;
+}
+
+.bottom-tier .info .link > a {
+    color: #fffb;
+    text-decoration: none;
+}
+
+.bottom-tier .info .link > a:hover {
+    text-decoration: underline;
+}
+
+.vertical-separator {
+    display: flex;
+    width: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical-separator .line {
+    display: flex;
+    width: 1px;
+    border: 0px solid #fffb;
+    border-left-width: 1px;
+    height: 50%;
+}
+
+.horizontal-separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal-separator .line {
+    display: flex;
+    width: 500px;
+    border: 0px solid #fffb;
+    border-top-width: 1px;
+}
+
+@keyframes punch-line-animation {
     0% {
         opacity: 0;
     }
@@ -59,7 +149,7 @@ html .dark, body .dark {
     }
 }
 
-@keyframes mayTheForceBeWithYouEmoji {
+@keyframes logo-animation {
     0% {
         font-size: 0px;
     }

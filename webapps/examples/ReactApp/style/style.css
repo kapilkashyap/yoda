@@ -1,0 +1,21 @@
+html, body {
+    user-select: none;
+    background-color: #e2e2e2;
+    font-family: verdana;
+    font-size: 11px;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+html .dark, body .dark {
+    color: #fffb;
+    background: radial-gradient(circle, #555a5f 0%, #1c1e20 100%);
+}
+
+.welcome-text {
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 50px;
+}
