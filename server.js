@@ -13,11 +13,23 @@ if (config && config.host && config.port) {
     const serverRunningOn = `http://${config.host}:${config.port}`;
     // utility method to determine the type of content being accessed
     const getContentType = (urlPath) => {
+        if (urlPath.indexOf('.js') !== -1 || urlPath.indexOf('.mjs') !== -1) {
+            return 'text/javascript';
+        }
+        if (urlPath.indexOf('.json') !== -1) {
+            return 'application/json';
+        }
         if (urlPath.indexOf('.css') !== -1) {
             return 'text/css';
         }
         if (config.imageTypeExtensions.find(x => urlPath.indexOf(x) !== -1)) {
             return 'image';
+        }
+        if (urlPath.indexOf('.txt') !== -1) {
+            return 'text/plain';
+        }
+        if (urlPath.indexOf('.xml') !== -1) {
+            return 'application/xml';
         }
         return 'text/html';
     };
