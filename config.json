@@ -2,7 +2,7 @@
     "host": "localhost",
     "port": 3333,
     "base": "/webapps",
-    "deploy": "/deploy",
+    "deploy": "/examples",
     "ignore": {
         "directories": [".idea", ".git"]
     },
