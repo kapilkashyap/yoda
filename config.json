@@ -2,5 +2,9 @@
     "host": "localhost",
     "port": 3333,
     "base": "/webapps",
+    "deploy": "/deploy",
+    "ignore": {
+        "directories": [".idea", ".git"]
+    },
     "imageTypeExtensions": [".apng", ".bmp", ".gif", ".ico", ".jpeg", ".jpg", ".png", ".svg", ".tif", ".tiff", ".webp"]
 }

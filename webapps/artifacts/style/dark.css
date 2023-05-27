@@ -1,7 +1,7 @@
 html, body {
     user-select: none;
     background-color: #e2e2e2;
-    font-family: verdana;
+    font-family: verdana, serif;
     font-size: 11px;
     height: 100%;
     margin: 0;
@@ -61,25 +61,25 @@ html .dark-theme, body .dark-theme {
     text-decoration: underline;
 }
 
-.middle-tier .examples-section .list {
+.middle-tier .deployments-section .list {
     display: flex;
     margin-top: 10px;
     flex-direction: column;
     align-items: center;
 }
 
-.middle-tier .examples-section .list .entry {
+.middle-tier .deployments-section .list .entry {
     margin: 5px 0 0;
     display: flex;
 }
 
-.middle-tier .examples-section .list .entry > a {
+.middle-tier .deployments-section .list .entry > a {
     color: #fffb;
     font-size: large;
     text-decoration: none;
 }
 
-.middle-tier .examples-section .list .entry > a:hover {
+.middle-tier .deployments-section .list .entry > a:hover {
     text-decoration: underline;
 }
 
@@ -122,7 +122,7 @@ html .dark-theme, body .dark-theme {
 .vertical-separator .line {
     display: flex;
     width: 1px;
-    border: 0px solid #fffb;
+    border: 0 solid #fffb;
     border-left-width: 1px;
     height: 50%;
 }
@@ -136,7 +136,7 @@ html .dark-theme, body .dark-theme {
 .horizontal-separator .line {
     display: flex;
     width: 500px;
-    border: 0px solid #fffb;
+    border: 0 solid #fffb;
     border-top-width: 1px;
 }
 
@@ -151,7 +151,7 @@ html .dark-theme, body .dark-theme {
 
 @keyframes logo-animation {
     0% {
-        font-size: 0px;
+        font-size: 0;
     }
     50% {
         font-size: 180px;

@@ -1,5 +1,5 @@
 # yoda
-A basic HTTP server made using NodeJS which is light weight, has a small footprint yet is powerful.
+A basic HTTP server made using NodeJS which is lightweight, has a small footprint yet is powerful.
 
 Usually, you would build a Node application and use a Node framework like [Express JS](https://github.com/expressjs/express) to build and configure a server to serve that application. It is a one-one mapping, one application, one server. On the contrary **yoda** is a simple HTTP webserver which allows you to host multiple front-end applications :slightly_smiling_face:
 
@@ -29,10 +29,12 @@ Property | Default
 host | localhost
 port | 3333
 base | /webapps
+deploy | /examples
+ignore | { directories: Array of directories that can be ignored }
 imageTypeExtensions | Array of various type extensions for image files that are allowed to be served
 
 #### Why to use
-It's quick, simple and lite weight :wink:
+It's quick, simple and lightweight :wink:
 
 #### License
 MIT Licensed
