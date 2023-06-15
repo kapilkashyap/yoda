@@ -11,7 +11,7 @@ Usually, you would build a Node application and use a Node framework like [Expre
 You can either clone the repository or download the archive and unzip it
 
 #### Will I need to build
-Nope! This application does not have any npm dependencies and is ready to use OOTB
+Nope! This application does not have any npm dependencies and is ready to use OOTB 😎
 
 #### How to use
 Open your favourite CLI pointing to the root of the application and execute
@@ -29,7 +29,7 @@ Property | Default
 host | localhost
 port | 3333
 base | /webapps
-deploy | /examples
+deploy | /examples (this allows you to have more than one deployment directory)
 ignore | { directories: Array of directories that can be ignored }
 imageTypeExtensions | Array of various type extensions for image files that are allowed to be served
 
