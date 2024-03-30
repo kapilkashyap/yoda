@@ -1,8 +1,8 @@
 {
+    "base": "/webapps",
     "host": "localhost",
     "port": 3333,
-    "base": "/webapps",
-    "deploy": "/examples",
+    "deploy": "examples",
     "ignore": {
         "directories": [".idea", ".git"]
     },
