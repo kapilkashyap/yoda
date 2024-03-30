@@ -26,10 +26,13 @@ By default, you can create/deploy your application under **webapps** directory. 
 #### Configurations
 Property | Default
 -------- | -------
-host | localhost
-port | 3333
-base | /webapps
-deploy | /examples (this allows you to have more than one deployment directory)
+base | /webapps (required)
+host | localhost (default)
+-h | Command line property to pass a host name
+port | 3333 (default)
+-p | Command line property to pass a port
+deploy | /examples (default, this allows you to have more than one deployment directory)
+-d | Command line property to pass a deployment directory
 ignore | { directories: Array of directories that can be ignored }
 imageTypeExtensions | Array of various type extensions for image files that are allowed to be served
 
