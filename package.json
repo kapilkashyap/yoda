@@ -1,0 +1,26 @@
+{
+  "name": "yoda",
+  "version": "1.0.0",
+  "description": "A lightweight HTTP server made using NodeJS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kapilkashyap/yoda.git"
+  },
+  "keywords": [
+    "stateless",
+    "nodejs",
+    "webserver",
+    "http-server"
+  ],
+  "author": "Kapil Kashyap",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kapilkashyap/yoda/issues"
+  },
+  "homepage": "https://github.com/kapilkashyap/yoda#readme"
+}
