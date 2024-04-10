@@ -22,6 +22,10 @@ const options = {
     deploy: {
         type: 'string',
         short: 'd',
+    },
+    config: {
+        type: 'string',
+        short: 'c'
     }
 };
 
@@ -167,9 +171,16 @@ const requestListener = (req, res) => {
 const server = http.createServer(requestListener);
 // register the server to listen on the configured host and port
 server.listen(port, host, () => {
-    // display the default server configuration
-    console.info('Default server configuration:');
-    console.info(config);
+    if (cmdArgs.config === 'true') {
+        // display the server configuration
+        console.info('Server configuration:');
+        console.info({
+            ...config,
+            host,
+            port,
+            deploy: deploymentFolder
+        });
+    }
     // display a server up and running message on Node CLI
     console.info(`Server is up and running on ${serverRunningOn}`);
 });
