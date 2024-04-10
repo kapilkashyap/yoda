@@ -1,5 +1,5 @@
 {
-  "name": "yoda",
+  "name": "@kapilkashyap/yoda",
   "version": "1.0.0",
   "description": "A lightweight HTTP server made using NodeJS",
   "main": "server.js",
