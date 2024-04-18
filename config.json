@@ -3,6 +3,7 @@
     "host": "localhost",
     "port": 3333,
     "deploy": "examples",
+    "info": true,
     "ignore": {
         "directories": [".idea", ".git"]
     },

@@ -33,6 +33,8 @@ port | 3333 (default)
 -p | Command line property to pass a port
 deploy | /examples (default, this allows you to have more than one deployment directory)
 -d | Command line property to pass a deployment directory
+info | false (set to true to display server configuration details, false by default)
+-i | Command line property to enable showing server configuration on console
 ignore | { directories: Array of directories that can be ignored }
 imageTypeExtensions | Array of various type extensions for image files that are allowed to be served
 

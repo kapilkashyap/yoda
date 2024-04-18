@@ -23,9 +23,9 @@ const options = {
         type: 'string',
         short: 'd',
     },
-    config: {
+    info: {
         type: 'string',
-        short: 'c'
+        short: 'i'
     }
 };
 
@@ -66,6 +66,8 @@ const host = cmdArgs.host || config.host || 'localhost';
 const port = cmdArgs.port || config.port || '3333';
 // Take it from the command line or the config file. Fallback to 'examples'
 const deploymentFolder = cmdArgs.deploy || config.deploy || 'examples';
+// Take it from the command line or the config file. Fallback to false
+const showInfo = (cmdArgs.info && cmdArgs.info === 'true') || config.info || false;
 // generated a base url to be used to load resources
 const baseUrl = __dirname + config.base;
 const serverRunningOn = `${protocol}://${host}:${port}`;
@@ -171,7 +173,7 @@ const requestListener = (req, res) => {
 const server = http.createServer(requestListener);
 // register the server to listen on the configured host and port
 server.listen(port, host, () => {
-    if (cmdArgs.config === 'true') {
+    if (showInfo) {
         // display the server configuration
         console.info('Server configuration:');
         console.info({
