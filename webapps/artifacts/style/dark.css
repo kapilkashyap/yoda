@@ -51,11 +51,11 @@ html .dark-theme, body .dark-theme {
 }
 
 .middle-tier .section {
-    width: 200px;
+    /*width: 200px;*/
 }
 
 .middle-tier .section .header {
-    color: #ffb;
+    color: orange;
     text-align: center;
     font-size: x-large;
     text-decoration: underline;
@@ -64,23 +64,49 @@ html .dark-theme, body .dark-theme {
 .middle-tier .deployments-section .list {
     display: flex;
     margin-top: 10px;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    width: 1090px;
+}
+
+@media (max-width: 1200px) {
+    .middle-tier .deployments-section .list {
+        width: 900px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 900px) {
+    .middle-tier .deployments-section .list {
+        width: 600px;
+        justify-content: center;
+    }
 }
 
 .middle-tier .deployments-section .list .entry {
-    margin: 5px 0 0;
     display: flex;
+    margin: 10px;
+    border: 1px solid #a8a8a8;
+    border-radius: 5px;
+    box-shadow: 0 18px 6px -6px #333b;
+}
+
+.middle-tier .deployments-section .list .entry:hover {
+    background-color: orange;
 }
 
 .middle-tier .deployments-section .list .entry > a {
     color: #fffb;
+    width: 300px;
+    padding: 20px;
     font-size: large;
     text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .middle-tier .deployments-section .list .entry > a:hover {
-    text-decoration: underline;
+    color: #1c1e20;
 }
 
 .bottom-tier {

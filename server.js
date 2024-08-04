@@ -104,7 +104,7 @@ const requestListener = (req, res) => {
                     // assuming that index.html is the end-point to access the project
                     _url = `${serverRunningOn}/${deploymentFolder}/${directory}/index.html`;
                     // html construct to be displayed on home page
-                    html += `<div class="entry"><a href="${_url}" target="_blank">${directory}</a></div>`;
+                    html += `<div class="entry" title="${directory}"><a href="${_url}" target="_blank">${directory}</a></div>`;
                 });
 
                 // once the html construct is ready, write it into deployments.html file
